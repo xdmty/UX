@@ -1,0 +1,969 @@
+﻿*{font-family: "Segoe UI",Arial,sans-serif;}
+
+#sidebarButton,
+.s4-notdlg.social-bar,
+.menu-icon,
+.xd-header .thumbCrop img,
+.ms-imnImg{display:none}
+.ms-dialog .xd-header,
+.ms-dialog .xd-footer{ display:none !important;} 
+.ms-dialog body #s4-workspace{ background:#fff;}
+
+/*******************************************************
+	
+	0.1 SHAREPOINT RESETS 
+	
+*******************************************************/
+body.xd.system .header-table{
+	display:none;	
+}
+body.xd.system #s4-bodyContainer {
+    min-width: 100%;
+}
+body.xd.system .xd-search {
+    text-align: right;
+}
+body.xd.system  #s4-workspace{
+	/*background-color:#f6f6f6*/
+}
+body.xd.system .ms-splitbuttonhover{
+	 margin: -1px 3px 0 3px;
+}
+body.xd.system hr{
+	border-bottom:none;
+	border-color:#fff;
+}
+body.xd.system .ms-tvselected a.ms-navitem{
+	border:none;
+	background:none;
+}
+/* Trww View */
+body.xd.system #ctl00_PlaceHolderLeftNavBar_ctl01_NavResizer > div {
+    height: auto !important;
+    margin-bottom:40px;
+}
+body.xd.system .ms-ltviewselectormenuheader .ms-viewselectorhover {
+	background:none;
+	border-color:#009FD9
+}
+body.xd.system .ms-MenuUIPopupBody.ms-MenuUIPopupScreen *,
+body.xd.system .ms-MenuUIULItem *,
+body.xd.system .ms-MenuUIPopupBody.ms-MenuUIPopupScreen *,
+body.xd.system .ms-MenuUIPopupBody.ms-MenuUIPopupScreen *:after,
+body.xd.system .ms-MenuUIPopupBody.ms-MenuUIPopupScreen *:before{
+	 -moz-box-sizing:none !important;
+	  moz-box-sizing:none !important;
+}
+html.not-dialog body.xd.system .ms-MenuUIPopupBody.ms-MenuUIPopupScreen *{
+	 -moz-box-sizing:content-box!important;
+	  moz-box-sizing:content-box!important;
+}
+
+body #s4-workspace{
+	background:#f6f6f6;	
+}
+/*******************************************************
+	
+	0.2 HEADER
+	
+*******************************************************/
+.xd-header {
+	background:#009FD9; padding: 3em 2em; color:#fff;
+	}
+.xd-header .xdauth{
+	padding-right:80px
+	}
+.xd-header .thumbCrop{
+	height:66px;
+	width:66px;
+	border-radius:100%;
+	background-position: center center !important;
+	background-size: 100% auto !important;
+	margin-left: 20px; 
+	float:right; 
+	position:absolute;
+	right: 0;
+    top: -17px;
+    width: 66px;
+    }
+.xd-header .logo img{
+	width:100%;
+	max-width:133px
+}
+.xd-header .navigation-description *{font-size:11px;line-height:11px}
+.xd-header .navigation-description h1,
+.xd-header .navigation-description h2{ display:inline }
+.xd-header .navigation-description a,
+.xd-header .xd-welcome{color:#fff;}
+.xd-header .navigation-description ul a {color:#003759 !important;}
+.xd-header .xd-welcome{position:relative; text-align:right;}
+.xd-header .xd-welcome .bold{ font-weight:600; display:block;}	
+.xd-header div.s4-pagedescription,
+.xd-header .s4-pagedescription span{    
+	display:block;
+    margin-top: 3px;
+    color:#BCE6F5;
+    }
+.xd-header .s4-pagedescription span{
+	margin-top:0px
+}    
+.xd-header .ms-listdescription table *{
+	display: block !important;
+}    
+/*******************************************************
+	
+	0.3 SEARCH
+	
+*******************************************************/
+#SearchBarXD.row {
+    -moz-box-sizing: border-box;
+    background: none repeat scroll 0 0 #0090C7;
+    max-width: inherit;
+    padding: 5px;
+}
+#SearchBarXD.row * {
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+body.xd .xd-search {
+    -moz-box-sizing: border-box;
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+    text-align: right;
+}
+body.xd .xd-search .s4-wpTopTable {
+    display: inline;
+}
+body.xd .xd-search .ms-sbtable-ex {
+    float: right;
+}
+body.xd .xd-search .ms-sbplain {
+    background-image: none;
+}
+body.xd .xd-search .ms-sbscopes.ms-sbcell .ms-sbscopes {
+    border: 0 none !important;
+    font-size: 16px;
+    font-weight: lighter;
+    height: auto;
+    margin-right: -9px;
+    padding: 2px;
+    width: auto;
+}
+body.xd .xd-search .ms-sbcell {
+    background-color: #FFFFFF;
+}
+body.xd .xd-search input {
+    background-color: rgba(0, 0, 0, 0);
+    background-image: none;
+    border: medium none !important;
+    box-shadow: none;
+    float: right;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: lighter;
+    height: auto;
+    margin: 0;
+    padding: 0 0 0 5px;
+    position: relative;
+}
+body.xd .xd-search td img {
+    display: none;
+}
+body.xd .xd-search td:first-child {
+    display: block;
+}
+body.xd .xd-search td:nth-of-type(2) {
+    background-color: #FFFFFF;
+}
+body.xd .xd-search td a {
+    background: url("https://at.avanade.com/organizations/XDNA/Style%20Library/XD/img/Search-Find.png") repeat scroll -7px -5px rgba(0, 0, 0, 0);
+    display: inline-block;
+    height: 19px;
+    margin-right: 2px;
+    padding: 3px;
+    width: 20px;
+}
+/*******************************************************
+	
+	0.4 MENU
+	
+*******************************************************/
+.xd-menu{
+	display:block;
+}
+body.xd .xd-menu {
+    background-color: #FFFFFF;
+    border-top: 2px solid #FE6601;
+    line-height: 10px;
+    overflow: visible;
+    padding: 0 30px;
+}
+body.xd .xd-menu .s4-tn li.static > .menu-item {
+    color: #7FD7F1;
+    font-size: 14px;
+    height: 100%;
+    padding: 17px;
+    text-transform: uppercase;
+}
+body.xd .xd-menu .menu ul li:first-child .menu-item {
+    color: #999999;
+}
+body.xd .xd-menu .menu li.selected {
+    border-top: 4px solid #FE6601;
+    line-height: 2px;
+}
+body.xd .xd-menu .menu li.selected .menu-item {
+    color: #F9F9FB;
+}
+body.xd .xd-menu .s4-tn ul.dynamic {
+    background-color: #E9ECED;
+    border: medium none;
+    margin-left: 1px;
+    margin-top: -4px;
+}
+body.xd .xd-menu .s4-tn ul.dynamic li {
+    color: #333333 !important;
+}
+body.xd .xd-menu .s4-tn ul.dynamic li a {
+    color: #333333 !important;
+}
+body.xd .xd-menu .s4-tn ul.dynamic li li.static .menu-item:hover {
+    background-color: #CED5D7;
+}
+body.xd .xd-menu .s4-tn li.static .menu-item {
+    color: #2F2F2F;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 18px;
+    text-transform: uppercase;
+}
+body.xd .xd-menu .s4-tn li.static .menu-item:hover {
+    background-color: #E9ECED;
+    text-decoration: none;
+}
+body.xd .xd-menu .s4-tn li {
+    font-weight: normal;
+    line-height: 6px;
+}
+body.xd .xd-menu .static.dynamic-children li a:hover {
+    background-color: #0088AF;
+}
+body.xd .xd-menu li.static.dynamic-children.hover {
+    background-color: #E9ECED;
+}
+body.xd .menu-horizontal a.dynamic-children span.additional-background, body.xd .menu-horizontal span.dynamic-children span.additional-background {
+    background-image: none;
+    background-position: right 5px;
+    padding-right: 15px;
+}
+body.xd .menu-horizontal a.dynamic-children span.additional-background:before, body.xd .menu-horizontal span.dynamic-children span.additional-background:before {
+    content: "▼";
+    display: inline-block;
+    float: right;
+    font-size: 11px;
+    margin-right: -20px;
+}
+/*******************************************************
+	
+	0.5 SIDEBAR
+	
+*******************************************************/
+body.xd.system #s4-leftpanel a{
+	color:#fff !important;
+}
+body.xd.system #s4-leftpanel{
+	width:240px;
+	background-color:#18B4EF;
+	/**/
+	bottom: 0;
+    content: "";
+    height: 100%;
+    /*position: absolute;*/
+    width: 240px;
+    z-index: -1;
+}
+body.xd.system #s4-leftpanel .xd-welcome{
+	display:none;
+}
+body.xd.system #s4-leftpanel:before{
+}
+body.xd.system #s4-leftpanel .s4-ca{
+	 margin-left: 240px;
+}
+body.xd.system #s4-leftpanel .s4-ql ul.root > li > .menu-item, .s4-qlheader, .s4-qlheader:visited{
+	font-size:2em
+}
+body.xd.system #s4-leftpanel .s4-ql ul.root ul > li {
+    background: none repeat scroll 0 0 #6CCFF4;
+    border-bottom: 1px solid #18B4EF;
+}
+body.xd.system #s4-leftpanel .s4-ql ul.root ul > li:hover{
+	 background-color: #48C3F2;
+}
+body.xd.system #s4-leftpane .ms-navitem a, 
+body.xd.system #s4-leftpane .ms-navitem a:hover{
+	color:#ffff !important;
+	text-decoration:none !important;
+}
+body.xd.system #s4-leftpanel .s4-ql ul > li > a:hover, .s4-ql ul.root > li > a:hover, .s4-qlheader:hover{
+	text-decoration:none !important;
+}
+body.xd.system #s4-leftpanel.ms-navitem a{
+	color:#fff !important;
+}
+body.xd.system #s4-leftpanel .ms-ql-additionaltopsection,
+body.xd.system #s4-leftpanel .s4-specialNavLinkList,
+body.xd.system #s4-leftpanel .s4-ql{
+	border:none !important;
+	margin-top:0px !important;
+}
+body.xd.system #s4-leftpanel .s4-ql a.selected{
+    background-image: none;
+    border: medium none;
+    color: #FFFFFF !important;
+    background-color: #48C3F2;
+   }
+body.xd.system #s4-leftpanel .s4-ql ul.root ul > li > a{
+	padding:10px 4px 15px 10px;
+	font-size:1.3em
+}
+body.xd.system #s4-leftpanel .ms-tvselected a.ms-navitem{
+	background:none;
+	border:none 0;
+	color:#fff !important;
+}
+body.xd.system #s4-leftpanel .ms-tvselected a.ms-navitem:hover,
+body.xd.system #s4-leftpanel .s4-specialNavLinkList a:hover > span.ms-splinkbutton-text{
+	color:#fff !important;
+	text-decoration:underline
+}
+/*******************************************************
+	
+	0.6 CONTENT
+	
+*******************************************************/
+body.xd.system .fieldName{
+	display:none
+}
+body.xd.system #main-content .page-title-area{
+	margin:0;
+}
+body.xd.system #main-content,
+.xd-footer{
+	background:#fff;
+}
+body.xd.system .ms-linksection-level1 ul li a{
+	font-size:13px	
+}
+body.xd.system #main-content a {
+    color: #0072BC;
+}
+body.xd.system .ms-listviewtable img[src="/_layouts/images/blank.gif"]{
+	display:none
+}
+body.xd.system .ms-linksection-level1 ul li{
+	padding-top: 5px;
+}
+body.xd.system .ms-ButtonHeightWidth{
+	height:auto
+    }
+body.xd.system #s4-bodyContainer .s4-ca {
+    margin-left: 240px;
+    }
+/*******************************************************
+	
+	0.7 DIALOGS
+	
+*******************************************************/
+.ms-dlgContent .ms-dlgTitle{
+	background: #009FD9;
+	border-bottom:solid 2px #FE6601
+}
+.ms-dlgContent .ms-hidden{
+	display:none;
+}
+.ms-dlgContent .xd-menu{
+	display:none;
+}
+/*******************************************************
+	
+	0.8 BUTTONS
+	
+*******************************************************/
+body.xd.system button, 
+body.xd.system input[type="button"], 
+body.xd.system input[type="reset"], 
+body.xd.system input[type="submit"]{
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+    transition: background-color 300ms ease-out 0s;
+    padding-bottom: 0.75em;
+    padding-top: 0.8125em;
+    background-color: #2BA6CB;
+    border-color: #2284A1;
+    border-style: solid;
+    border-width: 1px;
+    color: #FFFFFF;
+    font-weight: bold;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+   }
+body.xd.system  button:hover, 
+body.xd.system  button:focus, 
+body.xd.system  .button:hover, 
+body.xd.system  .button:focus {
+    color: #FFFFFF;
+    background-color: #2284A1;
+}
+body.xd.system button.disabled,
+body.xd.system button[disabled], 
+body.xd.system .button.disabled, 
+body.xd.system .button[disabled] {
+    background-color: #2BA6CB;
+    border-color: #2284A1;
+    box-shadow: none;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+/*******************************************************
+	
+	0.9 FOOTER
+	
+*******************************************************/
+.xd-footer{
+	text-align:center !important;
+	border-top:solid 1px #ccc;
+	background-color:#f6f6f6;
+	padding:3em;
+	clear: both;
+	color:#222
+}
+/*******************************************************
+	
+	1.0 MEDIA QUERIES Start with the Header
+	
+*******************************************************/
+@media only screen and (max-width: 768px) {
+	html.not-dialog body.xd.system #s4-bodyContainer{
+		background:#fff;	
+	}
+	html.not-dialog body.xd.system nobr .ms-ButtonHeightWidth {
+    	display: block;
+	}
+	html.not-dialog body.xd.system .ms-standardheader.ms-inputformheader{
+		text-align:center;
+		font-size:1.5em
+	}
+	html.not-dialog body.xd.system td.ms-descriptiontext{
+		display:block;
+		width:100%;
+		font-size:13px;
+	}
+	html.not-dialog body.xd.system td.ms-authoringcontrols.ms-inputformcontrols{
+		display:block;
+		width:100%;		
+	}
+	html.not-dialog body.xd.system td.ms-descriptiontext img{
+		display:none;	
+	}
+	html.not-dialog body.xd.system table.ms-v4propertysheetspacing{
+		padding: 15px !important;
+		display: block;
+		margin:0px;
+	}
+	html.not-dialog body.xd.system .ms-sectionline{
+		background:none;	
+	}	
+	html.not-dialog body.xd.system table.ms-toolbar{
+		background:none;	
+	}
+	/* Ribbon Glich Solve */
+	html body.xd.system .ms-cui-topBar2 {
+	    overflow: hidden;
+	}	
+	html.not-dialog body.xd.system .xd-header #sidebarButton, 
+	html.not-dialog body.xd.system .xd-header .menu-icon{
+		display:block;
+		position:absolute;
+		z-index:1;
+		cursor:pointer;
+		background-color:#0090C7;
+		background-position:center;
+		background-repeat:no-repeat;
+		text-indent:-9999px;
+		width:53px;
+		height:53px;
+	}
+	html.not-dialog body.xd.system .xd-header #sidebarButton{
+		left:0px;
+		background-image:url("https://at.avanade.com/organizations/XDNA/Style%20Library/XD/styles/../img/sidebar-icon.png");
+	}
+	html.not-dialog body.xd.system .xd-header #sidebarButton:hover{
+		background-color:#2284A1;
+	}
+	html.not-dialog body.xd.system .xd-header .menu-icon{
+		right:0;
+		background-image:url("https://at.avanade.com/organizations/XDNA/Style%20Library/XD/img/menu-icon.png");
+	}
+	html.not-dialog body.xd.system .xd-header .xd-welcome,
+	/*html.not-dialog body.xd.system .xd-header .s4-pagedescription,*/
+	html.not-dialog body.xd.system .xd-search,
+	html.not-dialog body.xd.system #SearchBarXD{
+		display:none;
+	}
+	html.not-dialog body.xd.system .xd-header,
+	html.not-dialog body.xd.system .xd-header .row .columns{
+		padding:0px;
+	}
+	html.not-dialog body.xd.system .xd-header .logo{
+		margin:10px 0;
+		height: 33px;
+	}
+	html.not-dialog body.xd.system .xd-header .logo img{
+		width: auto;
+		max-width:107px;
+	}
+	html.not-dialog body.xd.system .xd-header .logo{
+		text-align:center
+	}
+	html.not-dialog body.xd.system .xd-header .navigation-description *,
+	html.not-dialog body.xd.system .xd-header .navigation-description,
+	html.not-dialog body.xd.system .xd-header .navigation-description a{
+		background-color:#fff !important;
+		color:#666 !important;
+		font-weight:400;
+	}
+	html.not-dialog body.xd.system #s4-leftpanel{
+		display:none;	
+	}
+	html.not-dialog body.xd.system #s4-bodyContainer .s4-ca{
+		margin-left:0px;
+	}
+	html.not-dialog body.xd.system .xd-header .medium-2, 
+	html.not-dialog body.xd.system .xd-header .medium-6{
+		width:100%;	
+	}
+	html.not-dialog body.xd.system .xd-header div.s4-pagedescription, 
+	html.not-dialog body.xd.system .xd-header .s4-pagedescription span{
+		margin-top:0;
+	}
+	html.not-dialog body.xd.system .xd-header .navigation-description{
+		padding:10px;
+	}
+	html.not-dialog body.xd.system .xd-header .navigation-description a{
+		color:#0099FF !important;
+	}
+	html.not-dialog body.xd.system .s4-trc-container-menu {
+	    float: right;
+	    margin-top: 22px;
+	    margin-bottom:0;
+	}
+	html.not-dialog body.xd.system tr.s4-itm-selected > td, 
+	html.not-dialog body.xd.system tr.s4-itm-selected:hover > td{
+		background:none !important;
+	}
+	html.not-dialog body.xd.system tr.ms-itmhover{
+		text-align:center;	
+	}
+	html.not-dialog body.xd.system tr.ms-itmhover td{
+		padding:10px 0
+	}
+	html.not-dialog body.xd.system tr.ms-itmhover .ms-vb-title a{
+		font-size:2em;	
+	}
+	/******************************************************* 
+	
+		AUTHORING CONTROLS & PROPERTYSHEET TABLES
+
+	*******************************************************/	
+	html.not-dialog body.xd.system .ms-authoringcontrols table{
+		width:100%;	
+	}
+	html.not-dialog body.xd.system  #main-content .ms-authoringcontrols .ms-input{
+		width:auto;	
+	}
+	html.not-dialog body.xd.system #HierarchicalListBox {
+	    width: 100% !important;
+	}	body.xd.system .propertysheet tr{	
+		display:block;
+	}
+	html.not-dialog body.xd.system .ms-propertysheet.ms-v4propertysheetspacing td {
+	    display: block;
+	    width: 100%;
+	    height: auto;
+	}
+	/*******************************************************	
+		
+		ALL RESPONSIVE TABLES
+		
+	*******************************************************/
+	html.not-dialog body.xd.system{
+		background:#009FD9;
+	}
+
+	html.not-dialog body.xd.system #main-content{
+		padding:0px 0;
+		height:100% !important;	
+	}
+	html.not-dialog body.xd.system div.ms-viewselector, 
+	html.not-dialog body.xd.system div.ms-viewselectorhover{
+		padding: 4px 7px;
+	}
+	html.not-dialog body.xd.system #main-content > div > table {
+	    margin: 0 auto;
+	}	
+	html.not-dialog body.xd.system #main-content #onetidMngFieldRptrTable tr {
+		display:block !important;
+		width:100% !important;	
+	}
+	html.not-dialog body.xd.system #main-content .ms-menutoolbar{
+	    background-image:none;
+	}
+	html.not-dialog body.xd.system #main-content .ms-viewheadertr{
+		display:none
+	}
+	html.not-dialog body.xd.system #ctl00_PlaceHolderMain_rptrUsers tr td a{
+		display:block;
+		max-width: 210px !important;
+		padding:7px;
+	}
+	html.not-dialog body.xd.system table colgroup,
+	html.not-dialog body.xd.system #main-content tbody > tr > th{
+		display:none;
+	}
+	html.not-dialog body.xd.system .ms-toolbar label{
+		display:block
+	}
+	html.not-dialog body.xd.system #main-content .ms-input{
+		width:100%;	
+	}
+	html.not-dialog body.xd.system .ms-alternating{
+		background-color:#f6f6f6;
+	}	
+	html.not-dialog body.xd.system .xd-header .s4-pagedescription span{
+		display:inline-block	
+	}
+	html.not-dialog body.xd.system .features-table tr td:last-child{
+		display:none;
+	}
+	html.not-dialog body.xd.system .features-table tr table td:last-child{
+		display:block;
+	}
+	/*******************************************************
+	
+		PEOPLE TABLE LIST 
+	
+	*******************************************************/	
+	html.not-dialog body.xd.system table[summary="User Information List"] td {
+		vertical-align:middle;
+		border-top:solid 1px #ccc;
+		padding-bottom:20px;
+		padding-top:20px;
+	}
+	html.not-dialog body.xd.system table[summary="User Information List"] td img{
+		border-radius: 100% !important;
+	}
+	html.not-dialog body.xd.system #main-content table[summary="User Information List"] td.ms-vb2 {
+	    display: table-cell;
+	    text-align: left !important;
+	    width:auto !important;
+	}	
+	/*******************************************************
+	
+		RESPONSIVE MENU
+	
+	*******************************************************/
+	html.not-dialog body.xd.system .menu-horizontal{
+	    width: 100%;
+	}
+	html.not-dialog body.xd.system .ms-ltviewselectormenuheader .ms-viewselectorhover{
+    	border: 1px solid #fff;
+	}
+	html.not-dialog body.xd.system .mobile-submenu{
+		display:none;
+	}
+	html.not-dialog body.xd.system #s4-workspace .xd-menu .s4-tn li.static .menu-item {
+	    border-bottom: 1px solid #CCCCCC;
+	    color: #666666;
+	}
+	html.not-dialog body.xd.system .xd-menu a, 
+	html.not-dialog body.xd.system .xd-menu li, 
+	html.not-dialog body.xd.system .xd-menu, 
+	html.not-dialog body.xd.system .menu-horizontal {
+	    float: none;
+	    margin: 0;
+	    padding: 0;
+	}
+	html.not-dialog body.xd.system ul.root.static {
+	    overflow: hidden;
+	}
+	html.not-dialog body.xd.system .xd-menu .s4-tn li.static .menu-item {
+	    color: #2F2F2F;
+	    font-size: 1.2em;
+	    height: 100%;
+	    padding: 18px;
+	    text-transform: uppercase;
+	}
+	html.not-dialog body.xd.system .menu-horizontal li.static, 
+	html.not-dialog body.xd.system .menu-horizontal a.static, 
+	html.not-dialog body.xd.system .menu-horizontal span.static {
+	    display: block;
+	    float: none;
+	    margin: 0;
+	    padding: 0;
+	    width: 100%;
+	}
+	html.not-dialog body.xd.system .menu-horizontal a.dynamic-children span.additional-background:before, 
+	html.not-dialog body.xd.system .menu-horizontal span.dynamic-children span.additional-background:before {
+	    content: "▼";
+	    display: inline-block;
+	    float: right;
+	    font-size: 11px;
+	    margin-right: -20px;
+	}
+	html.not-dialog body.xd.system .menu-horizontal a.dynamic-children span.additional-background, 
+	html.not-dialog body.xd.system .menu-horizontal span.dynamic-children span.additional-background {
+	    background-image: none;
+	    background-position: right 5px;
+	    padding-right: 15px;
+	}
+	
+	html.not-dialog body.xd.system #s4-leftpanel .xd-welcome{
+		display:block;
+	}	
+	/*******************************************************
+	
+		RESPONSIVE WELCOME 
+	
+	*******************************************************/
+	html.not-dialog body.xd.system .xd-welcome .xdauth{
+		padding-right:80px;
+		background:#0090C7;
+		padding: 15px 15px 15px 65px;
+		color:#fff;
+		font-size:12px;
+		line-height: 16px;
+		border-bottom:solid 1px orange;
+		height: 50px;
+	}
+	html.not-dialog body.xd.system .xd-welcome .xdauth .bold{
+		font-weight:bold;
+		font-size:11px;
+		display:block	
+	}
+	html.not-dialog body.xd.system .xd-welcome .thumbCrop{
+	 	background-position: center center !important;
+	    background-size: 100% auto !important;
+	    border-radius: 100%;
+	    height: 50px;
+	    left: 6px;
+	    position: absolute;
+	    top: 14px;
+	    width: 50px;
+	    }
+	html.not-dialog body.xd.system .xd-welcome img{
+		display:none !important;
+	}	
+	/*******************************************************
+	
+		RESPONSIVE SIDEBAR 
+	
+	*******************************************************/
+	#jPanelMenu-menu {
+	  background: #009FD9;
+	  left:0 !important;
+	  overflow-y: auto !important;
+	  overflow-x: hidden;
+	  height:100% !important;
+	}
+	#jPanelMenu-menu a{
+		color:#fff !important;
+		font-size:15px !important; 
+		border:none 0;
+	}
+	#jPanelMenu-men div{
+		width:100% !important;
+	}
+	#jPanelMenu-menu .s4-ql a.selected, 
+	#jPanelMenu-menu ul li > li:hover{
+		background:none;
+		border:0;
+		background-color:#6CCFF4;
+		color:#fff !important;
+	}
+	#jPanelMenu-menu .ms-ql-additionaltopsection,
+	#jPanelMenu-menu .s4-specialNavLinkList{
+		border-color:#6CCFF4 !important;
+	}
+	.jPanelMenu-panel{		
+		box-shadow: -5px 0px 15px #056F8C;
+	}
+	/*******************************************************
+	
+		VIEW ALL SITE CONTENT
+	
+	*******************************************************/
+	html.not-dialog body.xd.system #main-content select {
+	    width: 100%;
+	}	
+	html.not-dialog body.xd.system #main-content table.ms-viewlsts .ms-vb-icon{
+	    padding: 0 30px !important;
+	    text-align: center;	
+	}
+	/* All site content tex */
+	html.not-dialog body.xd.system #main-content table.ms-viewlsts .ms-vb2{
+	text-align:left	
+	}
+	html.not-dialog body.xd.system #main-content table.ms-viewlsts td a{
+		font-size:1.5em;	
+	}
+	html.not-dialog body.xd.system #main-content table.ms-viewlsts td:nth-child(4),
+	html.not-dialog body.xd.system #main-content table.ms-viewlsts td:nth-child(5){
+		display:inline-block !important;
+		width:auto !important;
+	}
+	html.not-dialog body.xd.system #main-content td.ms-vb2.ms-viewlsts-noitems{
+		display:table-cell;	
+	}
+	/*******************************************************
+	
+		RESPONSIVE TABLES CUSTOM
+	
+	*******************************************************/
+	html.not-dialog body.xd.system #main-content tr.accordion-title{
+		cursor:pointer
+	}
+	html.not-dialog body.xd.system #main-content tr.accordion-title *{
+		width:100% !important;
+		display:block !important;
+	}
+	html.not-dialog body.xd.system #main-content tr.s4-itm-selected > td, 
+	html.not-dialog body.xd.system #main-content tr.s4-itm-selected:hover > td{
+		background:#fff;	
+	}
+	/* esto ligalo solo a la responsive tables chiditas  */
+	html.not-dialog body.xd.system #main-content tbody > tr.accordion-title + tr > td {
+	    border: none !important;
+	    display: block;
+	    width: 100% !important;
+	}
+	html.not-dialog body.xd.system tr.s4-itm-selected > td, tr.s4-itm-selected:hover > td{
+		background:none;	
+	}
+	html.not-dialog body.xd.system #main-content td#bottomPagingCell table{
+		margin:0 auto; 
+	}
+	html.not-dialog body.xd.system #main-content tr.accordion-title:hover {
+ 	   background:#D7EBF7;
+	}
+	html.not-dialog body.xd.system #main-content tr.accordion-title div.header-table{
+		text-align:left !important;	
+		color: #004255;
+	    font-size: 1em;
+	    font-weight: bold;
+	    line-height: 30px;
+	    text-align: left;
+	}
+	html.not-dialog body.xd.system #main-content tr.accordion-title {
+	    background: none repeat scroll 0 0 #C2E0F3;
+	    border-bottom: 1px solid #97CAEB;
+	    padding: 12px;
+	    width: 100% !important;
+	    display:block;
+	    text-align:left;
+	}
+	html.not-dialog body.xd.system tr.s4-itm-selected > td, 
+	html.not-dialog body.xd.system tr.s4-itm-selected:hover > td{
+		background:none;	
+	}
+	html.not-dialog body.xd.system #main-content tr.accordion-title:before {
+	    border-bottom: 7px solid rgba(0, 0, 0, 0);
+	    border-left: 7px solid #004255;
+	    border-top: 7px solid rgba(0, 0, 0, 0);
+	    content: "";
+	    height: 0;
+	    margin-top: 10px;
+	    position: absolute;
+	    right: 10px;
+	    width: 0;
+	}	
+	html.not-dialog body.xd.system #main-content tr.accordion-title.active:before {
+	    border-left: 7px solid rgba(0, 0, 0, 0);
+	    border-right: 7px solid rgba(0, 0, 0, 0);
+	    border-top: 7px solid #004255;
+	    content: "";
+	    height: 0;
+	    margin-top: 10px;
+	    position: absolute;
+	    right: 10px;
+	    width: 0;
+	}
+	html.not-dialog body.xd.system .s4-itm-cbx, 
+	html.not-dialog body.xd.system .s4-itm-inlineedit {
+	    position: relative;
+	    top: 0;
+	}
+}
+@media only screen and (max-width: 480px) {
+	html.not-dialog body.xd.system table a{
+		word-wrap: break-word;
+	}
+	
+	/*******************************************************
+	
+		PEOPLE TABLE
+	
+	*******************************************************/
+	html.not-dialog body.xd.system .ms-separator,
+	html.not-dialog body.xd.system #topPagingCell,
+	html.not-dialog body.xd.system table[summary="User Information List"] th:nth-child(5),
+	html.not-dialog body.xd.system table[summary="User Information List"] th:nth-child(6),
+	html.not-dialog body.xd.system table[summary="User Information List"] th:nth-child(7),
+	html.not-dialog body.xd.system table[summary="User Information List"] td:nth-child(5),
+	html.not-dialog body.xd.system table[summary="User Information List"] td:nth-child(6),
+	html.not-dialog body.xd.system table[summary="User Information List"] td:nth-child(7){
+		display:none !important;		
+	}
+	/*******************************************************
+	
+		SITE SETTINGS TABLE
+	
+	*******************************************************/
+	html.not-dialog body.xd.system #ctl00_PlaceHolderMain_ctl01_SettingLinksV4 td{	
+		display:block;
+		width:100% !important;
+	}
+	html.not-dialog body.xd.system .ms-linksection-level1 > td{
+		height:100% !important;
+		text-align:center;
+	}
+	/*******************************************************
+	
+		PAGE INFORMATION
+			
+	*******************************************************/
+	html.not-dialog body.xd.system #s4-workspace {
+	    overflow-x: hidden;
+    }
+	html.not-dialog body.xd.system div.ms-pageinformation{
+		float:none !important;
+		height:100%;
+		width:100%;	
+	}	
+	html.not-dialog body.xd.system #main-content > div {
+	    float: none !important;
+	    margin: 0 auto !important;
+	    width: auto !important;
+	}
+	html.not-dialog body.xd.system div.ms-pageinformation, 
+	html.not-dialog body.xd.system div.ms-pageinformation th,
+	html.not-dialog body.xd.system div.ms-pageinformation td,
+	html.not-dialog body.xd.system div.ms-pageinformation .ms-standardheader{
+		float:none !important;
+		height:100%;
+		text-align:center;	
+	}	
+	html.not-dialog body.xd.system #main-content td < .ms-featurestatus{
+		border:solid 1px red !important;
+	}
+}
